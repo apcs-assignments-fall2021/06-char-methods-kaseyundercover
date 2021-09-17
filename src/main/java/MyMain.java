@@ -36,9 +36,9 @@ public class MyMain {
     // from the original String.
     public static String removeNumbers(String str) {
 String result = " ";
-        for (char i=58; i<str.length(); i ++) {
-        if (i > 58){
-            result=result+i;
+        for (char i=0; i<str.length(); i ++) {
+        if (str.charAt(i)>'0' || str.charAt(i)<'9' ){
+            result=result+str.charAt(i);
             }
         }
 
