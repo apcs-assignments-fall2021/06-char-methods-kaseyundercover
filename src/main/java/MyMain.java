@@ -35,14 +35,13 @@ public class MyMain {
     // new String where all of the numbers have been removed
     // from the original String.
     public static String removeNumbers(String str) {
-String result = " ";
-        for (char i=0; i<str.length(); i ++) {
-        if (str.charAt(i)>'0' || str.charAt(i)<'9' ){
-            result=result+str.charAt(i);
+        String result = "";
+        for (char i = 0; i < str.length(); i++) {
+            if (!(str.charAt(i) >= '0' && str.charAt(i) <= '9') ){
+                result = result + str.charAt(i);
             }
-        }
-
-    return result;
+            }
+        return result;
     }
     // Write some code to test your methods!
     public static void main(String[] args) {
